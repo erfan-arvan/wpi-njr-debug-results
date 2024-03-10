@@ -1,0 +1,656 @@
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/CommonCore.java:217: error: (array.access.unsafe.high) $$ 4 $$ int $$ myIntegers $$ myIntegers $$ myIntegers $$ ( 8724, 8727 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+            myIntegers[i++] = Integer.valueOf(val);
+                        ^
+  found   : int
+  required: @IndexFor("myIntegers") or @LTLengthOf("myIntegers") -- an integer less than myIntegers's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/CommonCore.java:234: error: (array.access.unsafe.high) $$ 4 $$ int $$ myIntegers $$ myIntegers $$ myIntegers $$ ( 9147, 9150 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+            myIntegers[i++] = Double.valueOf(val);
+                        ^
+  found   : int
+  required: @IndexFor("myIntegers") or @LTLengthOf("myIntegers") -- an integer less than myIntegers's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/CommonCore.java:250: error: (array.access.unsafe.high) $$ 4 $$ int $$ myIntegers $$ myIntegers $$ myIntegers $$ ( 9574, 9577 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+            myIntegers[i++] = Float.valueOf(val);
+                        ^
+  found   : int
+  required: @IndexFor("myIntegers") or @LTLengthOf("myIntegers") -- an integer less than myIntegers's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/CommonCore.java:267: error: (array.access.unsafe.high) $$ 4 $$ int $$ myIntegers $$ myIntegers $$ myIntegers $$ ( 9983, 9986 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+            myIntegers[i++] = Long.valueOf(val);
+                        ^
+  found   : int
+  required: @IndexFor("myIntegers") or @LTLengthOf("myIntegers") -- an integer less than myIntegers's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/CommonCore.java:343: error: (argument) $$ 4 $$ initialCapacity $$ ArrayList constructor $$ int $$ @NonNegative int $$ ( 12336, 12337 ) $$ incompatible argument for parameter initialCapacity of ArrayList constructor.
+        final ArrayList<T> list = new ArrayList<T>(n);
+                                                   ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/CommonCore.java:515: error: (argument) $$ 4 $$ initialCapacity $$ ArrayList constructor $$ int $$ @NonNegative int $$ ( 17640, 17641 ) $$ incompatible argument for parameter initialCapacity of ArrayList constructor.
+        return new ArrayList<T>(n);
+                                ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/CommonCore.java:610: error: (array.access.unsafe.high) $$ 4 $$ int $$ rval $$ rval $$ rval $$ ( 20733, 20738 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+                rval[ptr++] = i;
+                        ^
+  found   : int
+  required: @IndexFor("rval") or @LTLengthOf("rval") -- an integer less than rval's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/CommonCore.java:614: error: (array.access.unsafe.high) $$ 4 $$ int $$ rval $$ rval $$ rval $$ ( 20854, 20859 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+                rval[ptr++] = i;
+                        ^
+  found   : int
+  required: @IndexFor("rval") or @LTLengthOf("rval") -- an integer less than rval's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/CommonCore.java:686: error: (array.access.unsafe.high) $$ 4 $$ int $$ myIntegers $$ myIntegers $$ myIntegers $$ ( 22813, 22816 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+            myIntegers[i++] = val;
+                        ^
+  found   : int
+  required: @IndexFor("myIntegers") or @LTLengthOf("myIntegers") -- an integer less than myIntegers's length
+error: SourceChecker.typeProcess: unexpected Throwable (NullPointerException) while processing ../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java; message: Cannot invoke "javax.lang.model.element.AnnotationMirror.getAnnotationType()" because "annotation" is null
+  ; The Checker Framework crashed.  Please report the crash.  Version: Checker Framework 3.43.0-SNAPSHOT, branch master, 2024-01-22, commit 21e72ff, dirty=true. 
+  Compilation unit: ../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java
+  Last visited tree at line 103 column 1:
+  public class CoreObject<T> extends Core implements Iterable<T> {
+  Exception: java.lang.NullPointerException: Cannot invoke "javax.lang.model.element.AnnotationMirror.getAnnotationType()" because "annotation" is null; java.lang.NullPointerException: Cannot invoke "javax.lang.model.element.AnnotationMirror.getAnnotationType()" because "annotation" is null
+  	at org.checkerframework.javacutil.AnnotationUtils.annotationName(AnnotationUtils.java:74)
+  	at org.checkerframework.common.value.ValueAnnotatedTypeFactory.createArrayLengthResultAnnotation(ValueAnnotatedTypeFactory.java:735)
+  	at org.checkerframework.common.value.ValueTreeAnnotator.visitMethodInvocation(ValueTreeAnnotator.java:466)
+  	at org.checkerframework.common.value.ValueTreeAnnotator.visitMethodInvocation(ValueTreeAnnotator.java:44)
+  	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1832)
+  	at jdk.compiler/com.sun.source.util.SimpleTreeVisitor.visit(SimpleTreeVisitor.java:81)
+  	at org.checkerframework.framework.type.treeannotator.ListTreeAnnotator.defaultAction(ListTreeAnnotator.java:52)
+  	at org.checkerframework.framework.type.treeannotator.ListTreeAnnotator.defaultAction(ListTreeAnnotator.java:20)
+  	at jdk.compiler/com.sun.source.util.SimpleTreeVisitor.visitMethodInvocation(SimpleTreeVisitor.java:488)
+  	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCMethodInvocation.accept(JCTree.java:1832)
+  	at jdk.compiler/com.sun.source.util.SimpleTreeVisitor.visit(SimpleTreeVisitor.java:81)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1927)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.addComputedTypeAnnotations(GenericAnnotatedTypeFactory.java:1854)
+  	at org.checkerframework.framework.type.AnnotatedTypeFactory.getAnnotatedType(AnnotatedTypeFactory.java:1381)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.getValueFromFactory(CFAbstractTransfer.java:211)
+  	at org.checkerframework.framework.flow.CFAbstractTransfer.visitMethodInvocation(CFAbstractTransfer.java:952)
+  	at org.checkerframework.common.value.ValueTransfer.visitMethodInvocation(ValueTransfer.java:480)
+  	at org.checkerframework.common.value.ValueTransfer.visitMethodInvocation(ValueTransfer.java:73)
+  	at org.checkerframework.dataflow.cfg.node.MethodInvocationNode.accept(MethodInvocationNode.java:122)
+  	at org.checkerframework.dataflow.analysis.AbstractAnalysis.callTransferFunction(AbstractAnalysis.java:349)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.callTransferFunction(ForwardAnalysisImpl.java:377)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.performAnalysisBlock(ForwardAnalysisImpl.java:151)
+  	at org.checkerframework.dataflow.analysis.ForwardAnalysisImpl.performAnalysis(ForwardAnalysisImpl.java:105)
+  	at org.checkerframework.framework.flow.CFAbstractAnalysis.performAnalysis(CFAbstractAnalysis.java:147)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.analyze(GenericAnnotatedTypeFactory.java:1591)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.performFlowAnalysis(GenericAnnotatedTypeFactory.java:1485)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.checkAndPerformFlowAnalysis(GenericAnnotatedTypeFactory.java:1994)
+  	at org.checkerframework.framework.type.GenericAnnotatedTypeFactory.preProcessClassTree(GenericAnnotatedTypeFactory.java:425)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:550)
+  	at org.checkerframework.common.basetype.BaseTypeVisitor.visitClass(BaseTypeVisitor.java:188)
+  	at jdk.compiler/com.sun.tools.javac.tree.JCTree$JCClassDecl.accept(JCTree.java:855)
+  	at jdk.compiler/com.sun.source.util.TreePathScanner.scan(TreePathScanner.java:66)
+  	at org.checkerframework.framework.source.SourceVisitor.visit(SourceVisitor.java:86)
+  	at org.checkerframework.framework.source.SourceChecker.typeProcess(SourceChecker.java:1056)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:558)
+  	at org.checkerframework.common.basetype.BaseTypeChecker.typeProcess(BaseTypeChecker.java:551)
+  	at org.checkerframework.javacutil.AbstractTypeProcessor$AttributionTaskListener.finished(AbstractTypeProcessor.java:188)
+  	at jdk.compiler/com.sun.tools.javac.api.ClientCodeWrapper$WrappedTaskListener.finished(ClientCodeWrapper.java:876)
+  	at jdk.compiler/com.sun.tools.javac.api.MultiTaskListener.finished(MultiTaskListener.java:133)
+  	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1435)
+  	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.flow(JavaCompiler.java:1392)
+  	at jdk.compiler/com.sun.tools.javac.main.JavaCompiler.compile(JavaCompiler.java:978)
+  	at jdk.compiler/com.sun.tools.javac.main.Main.compile(Main.java:319)
+  	at jdk.compiler/com.sun.tools.javac.main.Main.compile(Main.java:178)
+  	at jdk.compiler/com.sun.tools.javac.Main.compile(Main.java:64)
+  	at jdk.compiler/com.sun.tools.javac.Main.main(Main.java:50)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:223: error: (argument) $$ 4 $$ length $$ Array.newInstance $$ int $$ @NonNegative int $$ ( 8011, 8032 ) $$ incompatible argument for parameter length of Array.newInstance.
+        final T[] copy = (T[]) Array.newInstance(clazz, size() + toAdd.size());
+                                                               ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:227: error: (argument) $$ 4 $$ arg4 $$ System.arraycopy $$ @LTEqLengthOf({"a", "this.adapter.array(clazz)"}) int $$ @LTLengthOf(value={"a", "copy"}, offset={"0 - 1", "0 - 1"}) int $$ ( 8185, 8193 ) $$ incompatible argument for parameter arg4 of System.arraycopy.
+        System.arraycopy(a, 0, copy, 0, a.length);
+                                         ^
+  found   : @LTEqLengthOf({"a", "this.adapter.array(clazz)"}) int
+  required: @LTLengthOf(value={"a", "copy"}, offset={"0 - 1", "0 - 1"}) int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:228: error: (argument) $$ 4 $$ arg4 $$ System.arraycopy $$ @LTEqLengthOf({"b", "toAdd.adapter.array(clazz)"}) int $$ @LTLengthOf(value={"b", "copy"}, offset={"0 - 1", "a.length - 1"}) int $$ ( 8243, 8251 ) $$ incompatible argument for parameter arg4 of System.arraycopy.
+        System.arraycopy(b, 0, copy, a.length, b.length);
+                                                ^
+  found   : @LTEqLengthOf({"b", "toAdd.adapter.array(clazz)"}) int
+  required: @LTLengthOf(value={"b", "copy"}, offset={"0 - 1", "a.length - 1"}) int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:475: error: (argument) $$ 4 $$ endIndex $$ String.substring $$ int $$ @NonNegative int $$ ( 17768, 17787 ) $$ incompatible argument for parameter endIndex of String.substring.
+        final String call = methodcall ? string.substring(0, string.length() - 2) : string;
+                                                                             ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:632: error: (array.access.unsafe.high) $$ 4 $$ int $$ tmp $$ tmp $$ tmp $$ ( 23846, 23851 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+            tmp[dst++] = element;
+                   ^
+  found   : int
+  required: @IndexFor("tmp") or @LTLengthOf("tmp") -- an integer less than tmp's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:804: error: (argument) $$ 4 $$ length $$ Array.newInstance $$ int $$ @NonNegative int $$ ( 29722, 29726 ) $$ incompatible argument for parameter length of Array.newInstance.
+                    a = updateReturnArray((R[]) Array.newInstance(out.getClass(), size));
+                                                                                  ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:808: error: (array.access.unsafe.low) $$ 2 $$ int $$ a $$ ( 29815, 29816 ) $$ Potentially unsafe array access: the index could be negative.
+                a[i] = out;
+                  ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:808: error: (array.access.unsafe.high) $$ 4 $$ int $$ a $$ a $$ a $$ ( 29815, 29816 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+                a[i] = out;
+                  ^
+  found   : int
+  required: @IndexFor("a") or @LTLengthOf("a") -- an integer less than a's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:970: error: (argument) $$ 4 $$ length $$ Array.newInstance $$ int $$ @NonNegative int $$ ( 35337, 35343 ) $$ incompatible argument for parameter length of Array.newInstance.
+        N[] n = (N[]) Array.newInstance(class1, length);
+                                                ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:980: error: (argument) $$ 4 $$ arg4 $$ System.arraycopy $$ @LTEqLengthOf("array") int $$ @LTLengthOf(value={"array", "n"}, offset={"0 - 1", "offset - 1"}) int $$ ( 35660, 35672 ) $$ incompatible argument for parameter arg4 of System.arraycopy.
+                System.arraycopy(array, 0, n, offset, array.length);
+                                                           ^
+  found   : @LTEqLengthOf("array") int
+  required: @LTLengthOf(value={"array", "n"}, offset={"0 - 1", "offset - 1"}) int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:988: error: (argument) $$ 4 $$ arg4 $$ System.arraycopy $$ @LTEqLengthOf("array") int $$ @LTLengthOf(value={"array", "n"}, offset={"0 - 1", "offset - 1"}) int $$ ( 35959, 35971 ) $$ incompatible argument for parameter arg4 of System.arraycopy.
+                System.arraycopy(array, 0, n, offset, array.length);
+                                                           ^
+  found   : @LTEqLengthOf("array") int
+  required: @LTLengthOf(value={"array", "n"}, offset={"0 - 1", "offset - 1"}) int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:996: error: (argument) $$ 4 $$ arg4 $$ System.arraycopy $$ @LTEqLengthOf("x") int $$ @LTLengthOf(value={"x", "n"}, offset={"0 - 1", "offset - 1"}) int $$ ( 36195, 36199 ) $$ incompatible argument for parameter arg4 of System.arraycopy.
+                System.arraycopy(x, 0, n, offset, size);
+                                                  ^
+  found   : @LTEqLengthOf("x") int
+  required: @LTLengthOf(value={"x", "n"}, offset={"0 - 1", "offset - 1"}) int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:1008: error: (argument) $$ 4 $$ arg1 $$ Array.set $$ int $$ @LTLengthOf("n") int $$ ( 36557, 36565 ) $$ incompatible argument for parameter arg1 of Array.set.
+            Array.set(n, offset++, x);
+                               ^
+  found   : int
+  required: @LTLengthOf("n") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:1189: error: (argument) $$ 4 $$ index $$ String.charAt $$ @UpperBoundLiteral(0) int $$ @LTLengthOf("next.getClass().getSimpleName()") int $$ ( 42378, 42379 ) $$ incompatible argument for parameter index of String.charAt.
+                    sb.append(next.getClass().getSimpleName().charAt(0));
+                                                                     ^
+  found   : @UpperBoundLiteral(0) int
+  required: @LTLengthOf("next.getClass().getSimpleName()") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:1264: error: (array.access.unsafe.high.constant) $$ 4 $$ 0 $$ T extends Object [] $$ 1 $$ 1 $$ ( 45117, 45118 ) $$ Potentially unsafe array access: the constant index 0 could be larger than the array's bound
+        target[0] = (T) array.get(0);
+               ^
+  found   : T extends Object []
+  required: @MinLen(1) -- an array guaranteed to have at least 1 elements
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:1330: error: (argument) $$ 4 $$ length $$ Array.newInstance $$ int $$ @NonNegative int $$ ( 47539, 47540 ) $$ incompatible argument for parameter length of Array.newInstance.
+        T[] slice = (T[]) Array.newInstance(this.adapter.clazz(), n); // Arrays.copyOf(this.t, n);
+                                                                  ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:1343: error: (array.access.unsafe.high) $$ 4 $$ int $$ slice $$ slice $$ slice $$ ( 47888, 47893 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+            slice[ptr++] = e;
+                     ^
+  found   : int
+  required: @IndexFor("slice") or @LTLengthOf("slice") -- an integer less than slice's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:1353: error: (argument) $$ 4 $$ length $$ Array.newInstance $$ int $$ @NonNegative int $$ ( 48227, 48237 ) $$ incompatible argument for parameter length of Array.newInstance.
+                rval = (R[]) Array.newInstance(result.getClass(), size() / n);
+                                                                         ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:1358: error: (array.access.unsafe.high) $$ 4 $$ int $$ rval $$ rval $$ rval $$ ( 48361, 48365 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+                rval[tptr] = result;
+                     ^
+  found   : int
+  required: @IndexFor("rval") or @LTLengthOf("rval") -- an integer less than rval's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:1857: error: (argument) $$ 4 $$ bound $$ Random.nextInt $$ int $$ @Positive int $$ ( 63653, 63657 ) $$ incompatible argument for parameter bound of Random.nextInt.
+        return this.adapter.get(this.commonCore.random().nextInt(size));
+                                                                 ^
+  found   : int
+  required: @Positive int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:1996: error: (array.access.unsafe.high) $$ 4 $$ int $$ c $$ c $$ c $$ ( 68325, 68333 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+            c[size - i] = this.adapter.get(i);
+                   ^
+  found   : int
+  required: @IndexFor("c") or @LTLengthOf("c") -- an integer less than c's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:2385: error: (argument) $$ 4 $$ length $$ Array.newInstance $$ int $$ @NonNegative int $$ ( 81350, 81366 ) $$ incompatible argument for parameter length of Array.newInstance.
+                    a = updateReturnArray((R[]) Array.newInstance(out.getClass(), this.core.size()));
+                                                                                                ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:2388: error: (array.access.unsafe.low) $$ 2 $$ int $$ a $$ ( 81437, 81438 ) $$ Potentially unsafe array access: the index could be negative.
+                a[i] = out;
+                  ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreObject.java:2388: error: (array.access.unsafe.high) $$ 4 $$ int $$ a $$ a $$ a $$ ( 81437, 81438 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+                a[i] = out;
+                  ^
+  found   : int
+  required: @IndexFor("a") or @LTLengthOf("a") -- an integer less than a's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreNumber.java:168: error: (array.length.negative) $$ 1 $$ int $$ ( 5547, 5553 ) $$ Variable used in array creation could be negative.
+        double rval[] = new double[size()];
+                                       ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreNumber.java:214: error: (array.length.negative) $$ 1 $$ int $$ ( 6832, 6838 ) $$ Variable used in array creation could be negative.
+        int rval[] = new int[size()];
+                                 ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreClass.java:150: error: (array.access.unsafe.high.constant) $$ 4 $$ 0 $$ Class<? extends Object> [] $$ 1 $$ 1 $$ ( 5971, 5972 ) $$ Potentially unsafe array access: the constant index 0 could be larger than the array's bound
+                    toSpawn = (Class<T>) CoreClass.this.manager.getImplementors(x)[0];
+                                                                                   ^
+  found   : Class<? extends Object> []
+  required: @MinLen(1) -- an array guaranteed to have at least 1 elements
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreString.java:516: error: (array.access.unsafe.high.constant) $$ 4 $$ 1 $$ String @ArrayLenRange(from=1) [] $$ 2 $$ 2 $$ ( 18151, 18152 ) $$ Potentially unsafe array access: the constant index 1 could be larger than the array's bound
+                rval.put(split[0], split[1]);
+                                         ^
+  found   : String @ArrayLenRange(from=1) []
+  required: @MinLen(2) -- an array guaranteed to have at least 2 elements
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreString.java:922: error: (argument) $$ 4 $$ beginIndex $$ String.substring $$ int $$ @NonNegative int $$ ( 29364, 29365 ) $$ incompatible argument for parameter beginIndex of String.substring.
+                return x.substring(n, x.length() - n);
+                                   ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreString.java:922: error: (argument) $$ 4 $$ beginIndex $$ String.substring $$ int $$ @LTEqLengthOf("x") int $$ ( 29364, 29365 ) $$ incompatible argument for parameter beginIndex of String.substring.
+                return x.substring(n, x.length() - n);
+                                   ^
+  found   : int
+  required: @LTEqLengthOf("x") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreString.java:922: error: (argument) $$ 4 $$ endIndex $$ String.substring $$ int $$ @NonNegative int $$ ( 29367, 29381 ) $$ incompatible argument for parameter endIndex of String.substring.
+                return x.substring(n, x.length() - n);
+                                                 ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/CoreString.java:922: error: (argument) $$ 4 $$ endIndex $$ String.substring $$ @LTLengthOf(value="x", offset="n - 1") int $$ @LTEqLengthOf("x") int $$ ( 29367, 29381 ) $$ incompatible argument for parameter endIndex of String.substring.
+                return x.substring(n, x.length() - n);
+                                                 ^
+  found   : @LTLengthOf(value="x", offset="n - 1") int
+  required: @LTEqLengthOf("x") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/map/MapUtil.java:321: error: (override.return) $$ 6 $$ int $$ @NonNegative int $$ MapUtil<K extends Object, V extends Object> $$ int size(MapUtil<K extends Object, V extends Object> this) $$ Map<K extends Object, V extends Object> $$ @NonNegative int size(Map<K extends Object, V extends Object> this) $$ ( 9327, 9330 ) $$ Incompatible return type.
+    public int size() {
+           ^
+  found   : int
+  required: @NonNegative int
+  Consequence: method in MapUtil<K extends Object, V extends Object>
+    int size(MapUtil<K extends Object, V extends Object> this)
+  cannot override method in Map<K extends Object, V extends Object>
+    @NonNegative int size(Map<K extends Object, V extends Object> this)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/CSVLine.java:61: error: (array.access.unsafe.low) $$ 2 $$ int $$ this.entries $$ ( 2266, 2271 ) $$ Potentially unsafe array access: the index could be negative.
+        return this.entries[index];
+                            ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/CSVLine.java:61: error: (array.access.unsafe.high) $$ 4 $$ int $$ this.entries $$ this.entries $$ this.entries $$ ( 2266, 2271 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+        return this.entries[index];
+                            ^
+  found   : int
+  required: @IndexFor("this.entries") or @LTLengthOf("this.entries") -- an integer less than this.entries's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/processing/Mapper.java:103: error: (argument) $$ 4 $$ length $$ Array.newInstance $$ int $$ @NonNegative int $$ ( 3760, 3771 ) $$ incompatible argument for parameter length of Array.newInstance.
+            updateReturnArray((O[]) Array.newInstance(this.options.type, core.size()));
+                                                                                  ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/processing/Handler.java:90: error: (argument) $$ 4 $$ length $$ Array.newInstance $$ int $$ @NonNegative int $$ ( 3314, 3330 ) $$ incompatible argument for parameter length of Array.newInstance.
+            rval = (O[]) Array.newInstance(Object.class, this.core.size());
+                                                                       ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/commons/CommonAlgorithmic.java:135: error: (array.access.unsafe.high) $$ 4 $$ int $$ objects $$ objects $$ objects $$ ( 5096, 5098 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+            if (objects[kk].compareTo(objects[l]) < 0) ll = l;
+                        ^
+  found   : int
+  required: @IndexFor("objects") or @LTLengthOf("objects") -- an integer less than objects's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/commons/CommonAlgorithmic.java:179: error: (array.access.unsafe.low) $$ 2 $$ int $$ objects $$ ( 6534, 6535 ) $$ Potentially unsafe array access: the index could be negative.
+        Object tmp = objects[i];
+                             ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/commons/CommonAlgorithmic.java:179: error: (array.access.unsafe.high) $$ 4 $$ int $$ objects $$ objects $$ objects $$ ( 6534, 6535 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+        Object tmp = objects[i];
+                             ^
+  found   : int
+  required: @IndexFor("objects") or @LTLengthOf("objects") -- an integer less than objects's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/commons/CommonAlgorithmic.java:180: error: (array.access.unsafe.low) $$ 2 $$ int $$ objects $$ ( 6554, 6555 ) $$ Potentially unsafe array access: the index could be negative.
+        objects[i] = objects[j];
+                ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/commons/CommonAlgorithmic.java:180: error: (array.access.unsafe.high) $$ 4 $$ int $$ objects $$ objects $$ objects $$ ( 6554, 6555 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+        objects[i] = objects[j];
+                ^
+  found   : int
+  required: @IndexFor("objects") or @LTLengthOf("objects") -- an integer less than objects's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/commons/CommonAlgorithmic.java:180: error: (array.access.unsafe.low) $$ 2 $$ int $$ objects $$ ( 6567, 6568 ) $$ Potentially unsafe array access: the index could be negative.
+        objects[i] = objects[j];
+                             ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/commons/CommonAlgorithmic.java:180: error: (array.access.unsafe.high) $$ 4 $$ int $$ objects $$ objects $$ objects $$ ( 6567, 6568 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+        objects[i] = objects[j];
+                             ^
+  found   : int
+  required: @IndexFor("objects") or @LTLengthOf("objects") -- an integer less than objects's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/commons/CommonAlgorithmic.java:181: error: (array.access.unsafe.low) $$ 2 $$ int $$ objects $$ ( 6587, 6588 ) $$ Potentially unsafe array access: the index could be negative.
+        objects[j] = (T) tmp;
+                ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/commons/CommonAlgorithmic.java:181: error: (array.access.unsafe.high) $$ 4 $$ int $$ objects $$ objects $$ objects $$ ( 6587, 6588 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+        objects[j] = (T) tmp;
+                ^
+  found   : int
+  required: @IndexFor("objects") or @LTLengthOf("objects") -- an integer less than objects's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/commons/CommonUI.java:135: error: (array.access.unsafe.low) $$ 2 $$ int $$ this.heatmapColors $$ ( 4694, 4737 ) $$ Potentially unsafe array access: the index could be negative.
+        return this.heatmapColors[(int) (d * (this.heatmapColors.length - 1))];
+                                  ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/commons/CommonUI.java:135: error: (array.access.unsafe.high) $$ 4 $$ int $$ this.heatmapColors $$ this.heatmapColors $$ this.heatmapColors $$ ( 4694, 4737 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+        return this.heatmapColors[(int) (d * (this.heatmapColors.length - 1))];
+                                  ^
+  found   : int
+  required: @IndexFor("this.heatmapColors") or @LTLengthOf("this.heatmapColors") -- an integer less than this.heatmapColors's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/Wrapper.java:81: error: (array.access.unsafe.high) $$ 4 $$ int $$ converted $$ converted $$ converted $$ ( 3078, 3081 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+            converted[i++] = converter.f(x);
+                       ^
+  found   : int
+  required: @IndexFor("converted") or @LTLengthOf("converted") -- an integer less than converted's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/Wrapper.java:102: error: (array.access.unsafe.high) $$ 4 $$ int $$ entries $$ entries $$ entries $$ ( 3627, 3630 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+			entries[i++] = new MapEntry<K, V>(entry.getKey(), entry.getValue());
+			         ^
+  found   : int
+  required: @IndexFor("entries") or @LTLengthOf("entries") -- an integer less than entries's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/InputStreamWrapper.java:57: error: (override.return) $$ 6 $$ int $$ @GTENegativeOne int $$ InputStreamWrapper $$ int read(InputStreamWrapper this) throws IOException $$ InputStream $$ @GTENegativeOne int read(InputStream this) throws IOException $$ ( 2138, 2141 ) $$ Incompatible return type.
+    public int read() throws IOException {
+           ^
+  found   : int
+  required: @GTENegativeOne int
+  Consequence: method in InputStreamWrapper
+    int read(InputStreamWrapper this) throws IOException
+  cannot override method in InputStream
+    @GTENegativeOne int read(InputStream this) throws IOException
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/InputStreamWrapper.java:77: error: (override.return) $$ 6 $$ int $$ @GTENegativeOne int $$ InputStreamWrapper $$ int read(InputStreamWrapper this, byte [] p0) throws IOException $$ InputStream $$ @GTENegativeOne int read(InputStream this, byte [] p0) throws IOException $$ ( 2515, 2518 ) $$ Incompatible return type.
+    public int read(byte[] b) throws IOException {
+           ^
+  found   : int
+  required: @GTENegativeOne int
+  Consequence: method in InputStreamWrapper
+    int read(InputStreamWrapper this, byte [] p0) throws IOException
+  cannot override method in InputStream
+    @GTENegativeOne int read(InputStream this, byte [] p0) throws IOException
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/InputStreamWrapper.java:77: error: (override.return) $$ 6 $$ int $$ @LTEqLengthOf("#1") int $$ InputStreamWrapper $$ int read(InputStreamWrapper this, byte [] p0) throws IOException $$ InputStream $$ @LTEqLengthOf("#1") int read(InputStream this, byte [] p0) throws IOException $$ ( 2515, 2518 ) $$ Incompatible return type.
+    public int read(byte[] b) throws IOException {
+           ^
+  found   : int
+  required: @LTEqLengthOf("#1") int
+  Consequence: method in InputStreamWrapper
+    int read(InputStreamWrapper this, byte [] p0) throws IOException
+  cannot override method in InputStream
+    @LTEqLengthOf("#1") int read(InputStream this, byte [] p0) throws IOException
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/InputStreamWrapper.java:100: error: (override.return) $$ 6 $$ int $$ @GTENegativeOne int $$ InputStreamWrapper $$ int read(InputStreamWrapper this, byte [] p0, int p1, int p2) throws IOException $$ InputStream $$ @GTENegativeOne int read(InputStream this, byte [] p0, @NonNegative int p1, @NonNegative int p2) throws IOException $$ ( 2992, 2995 ) $$ Incompatible return type.
+    public int read(byte[] b, int off, int len) throws IOException {
+           ^
+  found   : int
+  required: @GTENegativeOne int
+  Consequence: method in InputStreamWrapper
+    int read(InputStreamWrapper this, byte [] p0, int p1, int p2) throws IOException
+  cannot override method in InputStream
+    @GTENegativeOne int read(InputStream this, byte [] p0, @NonNegative int p1, @NonNegative int p2) throws IOException
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/InputStreamWrapper.java:100: error: (override.return) $$ 6 $$ int $$ @LTEqLengthOf("#1") int $$ InputStreamWrapper $$ int read(InputStreamWrapper this, byte [] p0, int p1, int p2) throws IOException $$ InputStream $$ @LTEqLengthOf("#1") int read(InputStream this, byte [] p0, @LTEqLengthOf("#1") int p1, @LTLengthOf(value="#1", offset="#2 - 1") int p2) throws IOException $$ ( 2992, 2995 ) $$ Incompatible return type.
+    public int read(byte[] b, int off, int len) throws IOException {
+           ^
+  found   : int
+  required: @LTEqLengthOf("#1") int
+  Consequence: method in InputStreamWrapper
+    int read(InputStreamWrapper this, byte [] p0, int p1, int p2) throws IOException
+  cannot override method in InputStream
+    @LTEqLengthOf("#1") int read(InputStream this, byte [] p0, @LTEqLengthOf("#1") int p1, @LTLengthOf(value="#1", offset="#2 - 1") int p2) throws IOException
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/InputStreamWrapper.java:101: error: (argument) $$ 4 $$ off $$ InputStream.read $$ int $$ @NonNegative int $$ ( 3086, 3089 ) $$ incompatible argument for parameter off of InputStream.read.
+        return this.wrapped.read(b, off, len);
+                                    ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/InputStreamWrapper.java:101: error: (argument) $$ 4 $$ off $$ InputStream.read $$ int $$ @LTEqLengthOf("b") int $$ ( 3086, 3089 ) $$ incompatible argument for parameter off of InputStream.read.
+        return this.wrapped.read(b, off, len);
+                                    ^
+  found   : int
+  required: @LTEqLengthOf("b") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/InputStreamWrapper.java:101: error: (argument) $$ 4 $$ len $$ InputStream.read $$ int $$ @NonNegative int $$ ( 3091, 3094 ) $$ incompatible argument for parameter len of InputStream.read.
+        return this.wrapped.read(b, off, len);
+                                         ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/InputStreamWrapper.java:101: error: (argument) $$ 4 $$ len $$ InputStream.read $$ int $$ @LTLengthOf(value="b", offset="off - 1") int $$ ( 3091, 3094 ) $$ incompatible argument for parameter len of InputStream.read.
+        return this.wrapped.read(b, off, len);
+                                         ^
+  found   : int
+  required: @LTLengthOf(value="b", offset="off - 1") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/InputStreamWrapper.java:111: error: (override.return) $$ 6 $$ long $$ @NonNegative long $$ InputStreamWrapper $$ long skip(InputStreamWrapper this, long p0) throws IOException $$ InputStream $$ @NonNegative long skip(InputStream this, long p0) throws IOException $$ ( 3245, 3249 ) $$ Incompatible return type.
+    public long skip(long n) throws IOException {
+           ^
+  found   : long
+  required: @NonNegative long
+  Consequence: method in InputStreamWrapper
+    long skip(InputStreamWrapper this, long p0) throws IOException
+  cannot override method in InputStream
+    @NonNegative long skip(InputStream this, long p0) throws IOException
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/InputStreamWrapper.java:130: error: (override.return) $$ 6 $$ int $$ @NonNegative int $$ InputStreamWrapper $$ int available(InputStreamWrapper this) throws IOException $$ InputStream $$ @NonNegative int available(InputStream this) throws IOException $$ ( 3616, 3619 ) $$ Incompatible return type.
+    public int available() throws IOException {
+           ^
+  found   : int
+  required: @NonNegative int
+  Consequence: method in InputStreamWrapper
+    int available(InputStreamWrapper this) throws IOException
+  cannot override method in InputStream
+    @NonNegative int available(InputStream this) throws IOException
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/wrapper/InputStreamWrapper.java:149: error: (argument) $$ 4 $$ readlimit $$ InputStream.mark $$ int $$ @NonNegative int $$ ( 4051, 4060 ) $$ incompatible argument for parameter readlimit of InputStream.mark.
+        this.wrapped.mark(readlimit);
+                          ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/processing/NonNullIterator.java:149: error: (override.return) $$ 6 $$ int $$ @NonNegative int $$ NonNullIterator<T extends Object> $$ int nextIndex(NonNullIterator<T extends Object> this) $$ ListIterator<T extends Object> $$ @NonNegative int nextIndex(ListIterator<T extends Object> this) $$ ( 4111, 4114 ) $$ Incompatible return type.
+    public int nextIndex() {
+           ^
+  found   : int
+  required: @NonNegative int
+  Consequence: method in NonNullIterator<T extends Object>
+    int nextIndex(NonNullIterator<T extends Object> this)
+  cannot override method in ListIterator<T extends Object>
+    @NonNegative int nextIndex(ListIterator<T extends Object> this)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/processing/NonNullIterator.java:159: error: (override.return) $$ 6 $$ int $$ @GTENegativeOne int $$ NonNullIterator<T extends Object> $$ int previousIndex(NonNullIterator<T extends Object> this) $$ ListIterator<T extends Object> $$ @GTENegativeOne int previousIndex(ListIterator<T extends Object> this) $$ ( 4287, 4290 ) $$ Incompatible return type.
+    public int previousIndex() {
+           ^
+  found   : int
+  required: @GTENegativeOne int
+  Consequence: method in NonNullIterator<T extends Object>
+    int previousIndex(NonNullIterator<T extends Object> this)
+  cannot override method in ListIterator<T extends Object>
+    @GTENegativeOne int previousIndex(ListIterator<T extends Object> this)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Strings.java:64: error: (argument) $$ 4 $$ beginIndex $$ String.substring $$ int $$ @LTEqLengthOf("line") int $$ ( 2520, 2521 ) $$ incompatible argument for parameter beginIndex of String.substring.
+                rval.add(line.substring(a, b + 1));
+                                        ^
+  found   : int
+  required: @LTEqLengthOf("line") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Strings.java:64: error: (argument) $$ 4 $$ endIndex $$ String.substring $$ int $$ @LTEqLengthOf("line") int $$ ( 2523, 2528 ) $$ incompatible argument for parameter endIndex of String.substring.
+                rval.add(line.substring(a, b + 1));
+                                             ^
+  found   : int
+  required: @LTEqLengthOf("line") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Strings.java:82: error: (argument) $$ 4 $$ beginIndex $$ String.substring $$ int $$ @LTEqLengthOf("line") int $$ ( 3159, 3160 ) $$ incompatible argument for parameter beginIndex of String.substring.
+                        rval.add(line.substring(a, b + 1));
+                                                ^
+  found   : int
+  required: @LTEqLengthOf("line") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Strings.java:82: error: (argument) $$ 4 $$ endIndex $$ String.substring $$ int $$ @LTEqLengthOf("line") int $$ ( 3162, 3167 ) $$ incompatible argument for parameter endIndex of String.substring.
+                        rval.add(line.substring(a, b + 1));
+                                                     ^
+  found   : int
+  required: @LTEqLengthOf("line") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Strings.java:97: error: (argument) $$ 4 $$ beginIndex $$ String.substring $$ @GTENegativeOne int $$ @NonNegative int $$ ( 3617, 3618 ) $$ incompatible argument for parameter beginIndex of String.substring.
+                    rval.add(line.substring(a, b + 1).replaceAll("\\\\'", "'"));
+                                            ^
+  found   : @GTENegativeOne int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Strings.java:97: error: (argument) $$ 4 $$ beginIndex $$ String.substring $$ int $$ @LTEqLengthOf("line") int $$ ( 3617, 3618 ) $$ incompatible argument for parameter beginIndex of String.substring.
+                    rval.add(line.substring(a, b + 1).replaceAll("\\\\'", "'"));
+                                            ^
+  found   : int
+  required: @LTEqLengthOf("line") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Strings.java:97: error: (argument) $$ 4 $$ endIndex $$ String.substring $$ int $$ @LTEqLengthOf("line") int $$ ( 3620, 3625 ) $$ incompatible argument for parameter endIndex of String.substring.
+                    rval.add(line.substring(a, b + 1).replaceAll("\\\\'", "'"));
+                                                 ^
+  found   : int
+  required: @LTEqLengthOf("line") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Strings.java:113: error: (argument) $$ 4 $$ beginIndex $$ String.substring $$ int $$ @LTEqLengthOf("line") int $$ ( 4080, 4081 ) $$ incompatible argument for parameter beginIndex of String.substring.
+            rval.add(line.substring(a, line.length()));
+                                    ^
+  found   : int
+  required: @LTEqLengthOf("line") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java:221: error: (argument) $$ 4 $$ beginIndex $$ String.substring $$ @LTLengthOf(value={"absolute", "file.getAbsolutePath()"}, offset={"-2", "-2"}) int $$ @LTEqLengthOf("file2.getAbsolutePath()") int $$ ( 7903, 7924 ) $$ incompatible argument for parameter beginIndex of String.substring.
+                    String entryname = file.isDirectory() ? file2.getAbsolutePath().substring(absolute.length() + 1) : file2.getName();
+                                                                                                                ^
+  found   : @LTLengthOf(value={"absolute", "file.getAbsolutePath()"}, offset={"-2", "-2"}) int
+  required: @LTEqLengthOf("file2.getAbsolutePath()") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Files.java:281: error: (argument) $$ 4 $$ beginIndex $$ String.substring $$ @LTLengthOf(value={"absolute", "file.getAbsolutePath()"}, offset={"-2", "-2"}) int $$ @LTEqLengthOf("file2.getAbsolutePath()") int $$ ( 10490, 10511 ) $$ incompatible argument for parameter beginIndex of String.substring.
+                    String entryname = file.isDirectory() ? file2.getAbsolutePath().substring(absolute.length() + 1) : file2.getName();
+                                                                                                                ^
+  found   : @LTLengthOf(value={"absolute", "file.getAbsolutePath()"}, offset={"-2", "-2"}) int
+  required: @LTEqLengthOf("file2.getAbsolutePath()") int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Streams.java:308: error: (argument) $$ 4 $$ arg4 $$ System.arraycopy $$ @LTLengthOf(value={"newglobal", "newglobal"}, offset={"1024 * 1024 - 1", "1048575"}) int $$ @LTLengthOf(value={"globaldata", "newglobal"}, offset={"0 - 1", "0 - 1"}) int $$ ( 10311, 10316 ) $$ incompatible argument for parameter arg4 of System.arraycopy.
+                    System.arraycopy(globaldata, 0, newglobal, 0, total);
+                                                                  ^
+  found   : @LTLengthOf(value={"newglobal", "newglobal"}, offset={"1024 * 1024 - 1", "1048575"}) int
+  required: @LTLengthOf(value={"globaldata", "newglobal"}, offset={"0 - 1", "0 - 1"}) int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/utils/internal/Streams.java:313: error: (argument) $$ 4 $$ arg4 $$ System.arraycopy $$ @LTEqLengthOf("localdata") int $$ @LTLengthOf(value={"globaldata", "localdata"}, offset={"total - 1", "0 - 1"}) int $$ ( 10483, 10491 ) $$ incompatible argument for parameter arg4 of System.arraycopy.
+                System.arraycopy(globaldata, total, localdata, 0, lastread);
+                                                                  ^
+  found   : @LTEqLengthOf("localdata") int
+  required: @LTLengthOf(value={"globaldata", "localdata"}, offset={"total - 1", "0 - 1"}) int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/CollectionAdapter.java:101: error: (override.return) $$ 6 $$ int $$ @NonNegative int $$ CollectionAdapter<I extends Object, O extends Object> $$ int size(CollectionAdapter<I extends Object, O extends Object> this) $$ Collection<O extends Object> $$ @NonNegative int size(Collection<O extends Object> this) $$ ( 3547, 3550 ) $$ Incompatible return type.
+    public int size() {
+           ^
+  found   : int
+  required: @NonNegative int
+  Consequence: method in CollectionAdapter<I extends Object, O extends Object>
+    int size(CollectionAdapter<I extends Object, O extends Object> this)
+  cannot override method in Collection<O extends Object>
+    @NonNegative int size(Collection<O extends Object> this)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/CollectionAdapter.java:154: error: (override.return) $$ 6 $$ int $$ @NonNegative int $$ CollectionAdapter<I extends Object, O extends Object>.<anonymous net.jcores.jre.cores.adapter.CollectionAdapter$1> $$ int nextIndex(CollectionAdapter<I extends Object, O extends Object>.<anonymous net.jcores.jre.cores.adapter.CollectionAdapter$1> this) $$ ListIterator<O extends Object> $$ @NonNegative int nextIndex(ListIterator<O extends Object> this) $$ ( 4878, 4881 ) $$ Incompatible return type.
+            public int nextIndex() {
+                   ^
+  found   : int
+  required: @NonNegative int
+  Consequence: method in CollectionAdapter<I extends Object, O extends Object>.<anonymous net.jcores.jre.cores.adapter.CollectionAdapter$1>
+    int nextIndex(CollectionAdapter<I extends Object, O extends Object>.<anonymous net.jcores.jre.cores.adapter.CollectionAdapter$1> this)
+  cannot override method in ListIterator<O extends Object>
+    @NonNegative int nextIndex(ListIterator<O extends Object> this)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/CollectionAdapter.java:159: error: (override.return) $$ 6 $$ int $$ @GTENegativeOne int $$ CollectionAdapter<I extends Object, O extends Object>.<anonymous net.jcores.jre.cores.adapter.CollectionAdapter$1> $$ int previousIndex(CollectionAdapter<I extends Object, O extends Object>.<anonymous net.jcores.jre.cores.adapter.CollectionAdapter$1> this) $$ ListIterator<O extends Object> $$ @GTENegativeOne int previousIndex(ListIterator<O extends Object> this) $$ ( 5014, 5017 ) $$ Incompatible return type.
+            public int previousIndex() {
+                   ^
+  found   : int
+  required: @GTENegativeOne int
+  Consequence: method in CollectionAdapter<I extends Object, O extends Object>.<anonymous net.jcores.jre.cores.adapter.CollectionAdapter$1>
+    int previousIndex(CollectionAdapter<I extends Object, O extends Object>.<anonymous net.jcores.jre.cores.adapter.CollectionAdapter$1> this)
+  cannot override method in ListIterator<O extends Object>
+    @GTENegativeOne int previousIndex(ListIterator<O extends Object> this)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/CollectionAdapter.java:187: error: (argument) $$ 4 $$ length $$ Array.newInstance $$ int $$ @NonNegative int $$ ( 5640, 5646 ) $$ incompatible argument for parameter length of Array.newInstance.
+        final N[] rval = (N[]) Array.newInstance(in, size());
+                                                         ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/CollectionAdapter.java:189: error: (array.access.unsafe.low) $$ 2 $$ int $$ rval $$ ( 5723, 5724 ) $$ Potentially unsafe array access: the index could be negative.
+            rval[i] = (N) _get(i);
+                 ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/CollectionAdapter.java:293: error: (argument) $$ 4 $$ length $$ Array.newInstance $$ int $$ @NonNegative int $$ ( 8467, 8473 ) $$ incompatible argument for parameter length of Array.newInstance.
+        final Object[] rval = (Object[]) Array.newInstance(Object.class, size());
+                                                                             ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/CollectionAdapter.java:295: error: (array.access.unsafe.low) $$ 2 $$ int $$ rval $$ ( 8550, 8551 ) $$ Potentially unsafe array access: the index could be negative.
+            rval[i] = _get(i);
+                 ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/CollectionAdapter.java:316: error: (argument) $$ 4 $$ length $$ Array.newInstance $$ int $$ @NonNegative int $$ ( 9055, 9061 ) $$ incompatible argument for parameter length of Array.newInstance.
+            rval = (T[]) Array.newInstance(a.getClass().getComponentType(), size());
+                                                                                ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/CollectionAdapter.java:321: error: (array.access.unsafe.low) $$ 2 $$ int $$ rval $$ ( 9175, 9176 ) $$ Potentially unsafe array access: the index could be negative.
+            rval[i] = (T) _get(i);
+                 ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/EmptyAdapter.java:101: error: (override.return) $$ 6 $$ int $$ @NonNegative int $$ EmptyAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.EmptyAdapter$1> $$ int nextIndex(EmptyAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.EmptyAdapter$1> this) $$ ListIterator<T extends Object> $$ @NonNegative int nextIndex(ListIterator<T extends Object> this) $$ ( 3187, 3190 ) $$ Incompatible return type.
+            public int nextIndex() {
+                   ^
+  found   : int
+  required: @NonNegative int
+  Consequence: method in EmptyAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.EmptyAdapter$1>
+    int nextIndex(EmptyAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.EmptyAdapter$1> this)
+  cannot override method in ListIterator<T extends Object>
+    @NonNegative int nextIndex(ListIterator<T extends Object> this)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/EmptyAdapter.java:106: error: (override.return) $$ 6 $$ int $$ @GTENegativeOne int $$ EmptyAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.EmptyAdapter$1> $$ int previousIndex(EmptyAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.EmptyAdapter$1> this) $$ ListIterator<T extends Object> $$ @GTENegativeOne int previousIndex(ListIterator<T extends Object> this) $$ ( 3287, 3290 ) $$ Incompatible return type.
+            public int previousIndex() {
+                   ^
+  found   : int
+  required: @GTENegativeOne int
+  Consequence: method in EmptyAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.EmptyAdapter$1>
+    int previousIndex(EmptyAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.EmptyAdapter$1> this)
+  cannot override method in ListIterator<T extends Object>
+    @GTENegativeOne int previousIndex(ListIterator<T extends Object> this)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/ArrayAdapter.java:80: error: (array.access.unsafe.low) $$ 2 $$ int $$ this.array $$ ( 2623, 2624 ) $$ Potentially unsafe array access: the index could be negative.
+        return this.array[i];
+                          ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/ArrayAdapter.java:80: error: (array.access.unsafe.high) $$ 4 $$ int $$ this.array $$ this.array $$ this.array $$ ( 2623, 2624 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+        return this.array[i];
+                          ^
+  found   : int
+  required: @IndexFor("this.array") or @LTLengthOf("this.array") -- an integer less than this.array's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/ArrayAdapter.java:105: error: (array.access.unsafe.low) $$ 2 $$ int $$ ArrayAdapter.this.array $$ ( 3326, 3334 ) $$ Potentially unsafe array access: the index could be negative.
+                return ArrayAdapter.this.array[this.i++];
+                                                     ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/ArrayAdapter.java:105: error: (array.access.unsafe.high) $$ 4 $$ int $$ this.array $$ this.array $$ this.array $$ ( 3326, 3334 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+                return ArrayAdapter.this.array[this.i++];
+                                                     ^
+  found   : int
+  required: @IndexFor("this.array") or @LTLengthOf("this.array") -- an integer less than this.array's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/ArrayAdapter.java:117: error: (array.access.unsafe.low) $$ 2 $$ int $$ ArrayAdapter.this.array $$ ( 3643, 3651 ) $$ Potentially unsafe array access: the index could be negative.
+                return ArrayAdapter.this.array[this.i--];
+                                                     ^
+  found   : int
+  required: an integer >= 0 (@NonNegative or @Positive)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/ArrayAdapter.java:117: error: (array.access.unsafe.high) $$ 4 $$ int $$ this.array $$ this.array $$ this.array $$ ( 3643, 3651 ) $$ Potentially unsafe array access: the index could be larger than the array's bound
+                return ArrayAdapter.this.array[this.i--];
+                                                     ^
+  found   : int
+  required: @IndexFor("this.array") or @LTLengthOf("this.array") -- an integer less than this.array's length
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/ArrayAdapter.java:121: error: (override.return) $$ 6 $$ int $$ @NonNegative int $$ ArrayAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.ArrayAdapter$1> $$ int nextIndex(ArrayAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.ArrayAdapter$1> this) $$ ListIterator<T extends Object> $$ @NonNegative int nextIndex(ListIterator<T extends Object> this) $$ ( 3710, 3713 ) $$ Incompatible return type.
+            public int nextIndex() {
+                   ^
+  found   : int
+  required: @NonNegative int
+  Consequence: method in ArrayAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.ArrayAdapter$1>
+    int nextIndex(ArrayAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.ArrayAdapter$1> this)
+  cannot override method in ListIterator<T extends Object>
+    @NonNegative int nextIndex(ListIterator<T extends Object> this)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/ArrayAdapter.java:126: error: (override.return) $$ 6 $$ int $$ @GTENegativeOne int $$ ArrayAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.ArrayAdapter$1> $$ int previousIndex(ArrayAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.ArrayAdapter$1> this) $$ ListIterator<T extends Object> $$ @GTENegativeOne int previousIndex(ListIterator<T extends Object> this) $$ ( 3815, 3818 ) $$ Incompatible return type.
+            public int previousIndex() {
+                   ^
+  found   : int
+  required: @GTENegativeOne int
+  Consequence: method in ArrayAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.ArrayAdapter$1>
+    int previousIndex(ArrayAdapter<T extends Object>.<anonymous net.jcores.jre.cores.adapter.ArrayAdapter$1> this)
+  cannot override method in ListIterator<T extends Object>
+    @GTENegativeOne int previousIndex(ListIterator<T extends Object> this)
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/ArrayAdapter.java:165: error: (argument) $$ 4 $$ newLength $$ Arrays.copyOf $$ int $$ @NonNegative int $$ ( 4732, 4741 ) $$ incompatible argument for parameter newLength of Arrays.copyOf.
+            return (N[]) Arrays.copyOf(this.array, this.size, n.getClass());
+                                                       ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/ArrayAdapter.java:175: error: (argument) $$ 4 $$ newLength $$ Arrays.copyOf $$ int $$ @NonNegative int $$ ( 4968, 4977 ) $$ incompatible argument for parameter newLength of Arrays.copyOf.
+        return Arrays.copyOf(this.array, this.size);
+                                             ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/ArrayAdapter.java:199: error: (argument) $$ 4 $$ from $$ Arrays.copyOfRange $$ int $$ @NonNegative int $$ ( 5544, 5549 ) $$ incompatible argument for parameter from of Arrays.copyOfRange.
+        return Arrays.asList(Arrays.copyOfRange(this.array, start, end));
+                                                            ^
+  found   : int
+  required: @NonNegative int
+../dataset/url70ed135da7_ralfbiedert_jcores_tgz-pJ8-sandbox_SimpleFilterTestJ8/src/net/jcores/jre/cores/adapter/ArrayAdapter.java:199: error: (argume
